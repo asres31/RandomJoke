@@ -11,7 +11,7 @@ newJokeBtn.addEventListener('click', getJoke)
 
 function getPunchline(){
 	punchLineBox.innerHTML = punchLine;
-	punchLineBox.classList.add('bubbel')
+	punchLineBox.classList.add('bubbel-punch')
 	punchLineBtn.classList.toggle('hidden')
 	newJokeBtn.classList.toggle('hidden')
 }
