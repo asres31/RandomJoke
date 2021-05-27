@@ -72,17 +72,12 @@ button:hover, button:focus{
 	margin-top: 4em;
 }
 
-.bubbel::before, .bubbel-punch::befor{
+.bubbel::before{
 	content: '';
   	position: absolute;
 	bottom: -50px;
 	height: 50px;
     	width: 90px;
-
-}
-
-.bubbel::before{
-	
     left: 0;
     border-radius: 0 0 100%;
     box-shadow: -1px -1px 0 0 #9e9e9e inset, 
@@ -90,11 +85,14 @@ button:hover, button:focus{
       -32px -2px 0 0 #9e9e9e inset;
 }
 .bubbel-punch::befor{
+	content: '';
+    position: absolute;
     right: 0;
+    bottom: -50px;
+    height: 50px;
+    width: 90px;
     border-radius: 0% 0% 0% 100%;
-    box-shadow: -1px 1px 0px 0px #9e9e9e,
-	    26px -2px 0px 0 #fff inset,
-	    32px -2px 0px 0px #9e9e9e inset;
+    box-shadow: -1px 1px 0px 0px #9e9e9e, 26px -2px 0px 0 #fff inset, 32px -2px 0px 0px #9e9e9e inset;
 }
 
 #setup{
