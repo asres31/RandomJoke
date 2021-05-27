@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Odibee+Sans&display=swap");
+
+html{
+	font-size: 10px;
+	width: 100%;
+}
+body{
+	background-color: #fafafa;
+	margin: auto;
+	padding: 100px;
+	font-family: 'Indie Flower', cursive;
+}
+
+h1{
+	position: relative;
+	font-size: 8rem;
+	font-family: 'Odibee Sans', cursive;
+	letter-spacing: 4px;
+	color: #ff6d9e;
+}
+
+h1::before{
+	content: '';
+	position: absolute;
+	height: .3em;
+	width: 100%;
+	background: #FFFFFF;
+	bottom: 8px;
+	z-index: -1;
+}
+
+button{
+	margin: auto;
+	margin-top: 6em;
+	padding: 1.4em;
+	font-size: 1.6rem;
+	background-color: cornflowerblue;
+	color: white;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 0.4s;
+	border: none;
+}
+button:hover, button:focus{
+	background-color: #567bbd;
+	color: white;
+	border-color: blue;
+	letter-spacing: 2px;
+}
+
+.hidden{
+	display: none;
+}
+
+.joke{  
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	max-width: 1000px;
+}
+.bubbel{
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	padding: 1.2em 1.6em;
+	background-color: white;
+	color: #424242;
+	font-size: 2.4rem;
+	border: 2px solid #9e9e9e;
+	border-radius: 15px;
+	margin-top: 4em;
+}
+.bubbel::before{
+	content: '';
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+    height: 50px;
+    width: 90px;
+    border-radius: 0 0 100%;
+    box-shadow: -1px -1px 0 0 #9e9e9e inset, 
+		-26px 0 0 0 #fff inset,
+      -32px -2px 0 0 #9e9e9e inset;
+}
+
+#setup{
+	margin-top: 0;
+}
